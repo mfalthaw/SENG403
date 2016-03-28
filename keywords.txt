@@ -1,1 +1,82 @@
-Key wordsbugfixconfigdataadds Removesdeletebrokenmergelicensereadmefilesworkeditupdatecorrectstandardtestordercopyrightinformationadjustchangesspacingproblemalphabetarefactorclean upupdatebrokereplacemodifyredundant commentnewerupgradeerrormovetyporenamereworkpatchimproveexceptionmodularizeswitchverifycheckdocdocumentationtidytry catchdescriptionbuildsrc
+Key words
+
+Delete - 
+Files – module remove, module move, module add
+update - version
+correct – bug fix
+standard – indentation?
+adjust - 
+changes - 
+alpha – version 
+beta - version
+replace - 
+modify -
+newer - version
+upgrade - version
+modularize - module remove, module move, module add
+switch - 
+verify - 
+check - 
+
+Corrective:
+- Bug (bug fix)
+- Fix (bug fix)
+- Broken (bug fix)
+- Work (bug fix)
+- Edit (bug fix)
+- Problem (bug fix)
+- Error (bug fix)
+- Typo (bug fix)
+- Exception (debug)
+- Try (debug)
+- Catch (debug)
+- 
+Adaptive:
+- Config (build)
+- Data (data)
+- Readme (documentation)
+- Test (test)
+- Information (documentation)
+- comment (documentation)
+- doc (documentation)
+- documentation (documentation)
+- description (documentation)
+- build (build)
+- src (build)
+- note (documentation)
+- language (internationalization)
+
+Perfective:
+- Removes (cleanup)
+- Order (clean up)
+- clean up (clean up)
+- redundant (clean up) 
+- tidy (clean up)
+- spacing (indentation) 
+- rework (maintenance)
+- patch (maintenance) 
+- improve (maintenance)
+- move (module move)
+- refactor (refactoring)
+
+
+Implementation:
+- adds (feature added)
+- language (internationalization) 
+ 
+
+Non functional:
+- License (legal)
+- Copyright (legal)
+- Rename (rename)
+- Merge (merge)
+
+
+
+
+
+
+
+
+
+
