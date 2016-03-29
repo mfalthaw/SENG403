@@ -46,7 +46,7 @@ for repoName in repoNames:
 	commitidsfirst = [] 
 	commitidssecond = [] 
 	filecounts = [] 
-
+	comments = ['']
 	ids_and_counts = []
 
 	def getKey(item):
@@ -57,8 +57,9 @@ for repoName in repoNames:
 		#fname = open()
 
 		counter = -1
-
+		index = 0
 		#for line in lines:
+		commentStarted = 0
 		for line in f:
 			if line.startswith('commit'):
 				if (counter == 0):
@@ -71,10 +72,22 @@ for repoName in repoNames:
 					commitidsfirst.append(line[7:len(line)-1])
 				else:
 					commitidssecond.append(line[7:len(line)-1])
+				counter = counter + 1
 				
 			elif line.startswith('File count'):
 				filecounts.append(int(line[12:len(line)-1]))
-			counter = counter + 1
+				counter = counter + 1
+
+			elif line.startswith('commentStart'): 
+				commentStarted = 1
+			elif line.startswith('commentEnd'):
+				index = index + 1
+				commentStarted = 0	
+			elif commentStarted: 
+				comments.insert(index, comments[index] + line)
+
+			
+			
 		
 
 		index = 0
@@ -85,7 +98,7 @@ for repoName in repoNames:
 
 		ids_and_counts = sorted(ids_and_counts,key=getKey, reverse=True)
 
-	
+	print(comments[1])
 	fname = open(repoName + "_largestcommits.txt",'w')
 	fname.write('Number of commits ')
 	fname.write(str(len(ids_and_counts)))

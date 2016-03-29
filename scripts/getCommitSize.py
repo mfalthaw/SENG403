@@ -65,16 +65,18 @@ for url in urls:
 		if line.startswith('Author:') or line.startswith('Date:'):
 			pass
 		elif line.startswith('commit'):
+			fname.write("commentEnd" + '\n')
 			fname.write(str(line) + '\n')
 			fname.write("File count: " + str(count) + '\n')
 			fname.write("---------------------------------------------\n")
 			fname.write(str(line) + '\n')
+			fname.write("commentStart" + '\n')
 			count = 0
 		else:
 			if line.startswith(('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '-')):
 				count = count + 1
 				filename = ''.join([i for i in line if not i.isdigit() and i != '-'])
-				fname.write(filename + '\n')
+				#fname.write(filename + '\n')
 			else:
-				fname.write(str(line) + '\n')
+				fname.write(str(line) + '\n') #comments
 	fname.close()
