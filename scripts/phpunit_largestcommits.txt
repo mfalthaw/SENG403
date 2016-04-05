@@ -1,269 +1,269 @@
 
-    Cleanup
+    cleanup
 
 
 -----------------
-    Make it easier to use a checkout of the trunk.
+    make it easier to use a checkout of the trunk.
 
 
 -----------------
-    Reorganize.
+    reorganize.
 
 
 -----------------
-    Removing trailing whitespace from files. Refs #1063
+    removing trailing whitespace from files. refs #1063
 
 
 -----------------
-    Bump copyright year.
+    bump copyright year.
 
 
 -----------------
-    Remove Subversion keywords.
+    remove subversion keywords.
 
 
 -----------------
-    Remove closing PHP tags.
+    remove closing php tags.
 
 
 -----------------
-    Merge [4402].
+    merge [4402].
 
 
 -----------------
-    Bump copyright year.
+    bump copyright year.
 
 
 -----------------
-    Remove Subversion keywords.
+    remove subversion keywords.
 
 
 -----------------
-    Bump copyright year.
+    bump copyright year.
 
 
 -----------------
-    Remove Subversion keywords.
+    remove subversion keywords.
 
 
 -----------------
-    Initial work on PHP_CodeCoverage migration.
+    initial work on php_codecoverage migration.
 
 
 -----------------
-    Bump copyright year.
+    bump copyright year.
 
 
 -----------------
-    Bump copyright year.
+    bump copyright year.
 
 
 -----------------
-    Merge [5389].
+    merge [5389].
 
 
 -----------------
-    Bump copyright year.
+    bump copyright year.
 
 
 -----------------
-    Add @subpackage annotation.
+    add @subpackage annotation.
 
 
 -----------------
-    Initial work on autoloading.
+    initial work on autoloading.
 
 
 -----------------
-    Fugbix typo.
+    fugbix typo.
 
 
 -----------------
-    Recreate trunk.
+    recreate trunk.
 
 
 -----------------
-    Fugbix typo.
+    fugbix typo.
 
 
 -----------------
-    Fix CS/WS issues
+    fix cs/ws issues
 
 
 -----------------
-    Bump year.
+    bump year.
 
 
 -----------------
-    No longer needed.
+    no longer needed.
 
 
 -----------------
-    Post-PEAR cleanup, phase one: PHPUnit2_* -> PHPUnit_*, pear.php.net -> phpunit.de, etc.
+    post-pear cleanup, phase one: phpunit2_* -> phpunit_*, pear.php.net -> phpunit.de, etc.
 
 
 -----------------
-    Leftover: PHPUnit2 -> PHPUnit.
+    leftover: phpunit2 -> phpunit.
 
 
 -----------------
-    Closes #1558
+    closes #1558
 
 
 -----------------
-    Cleanup
+    cleanup
 
 
 -----------------
-    Bump copyright year
+    bump copyright year
 
 
 -----------------
-    Change email address.
+    change email address.
 
 
 -----------------
-    Bump copyright year.
+    bump copyright year.
 
 
 -----------------
-    List The BSD 3-Clause License correctly and consistently. Thanks to Christian Aistleitner <christian@quelltextlich.at> for bringing this issue to my attention.
+    list the bsd 3-clause license correctly and consistently. thanks to christian aistleitner <christian@quelltextlich.at> for bringing this issue to my attention.
 
 
 -----------------
-    Merge [1238], [1239], and [1240].
+    merge [1238], [1239], and [1240].
 
 
 -----------------
-    Bump copyright year
+    bump copyright year
 
 
 -----------------
-    Do not perform string replacement for @package_version@ anymore.
+    do not perform string replacement for @package_version@ anymore.
 
 
 -----------------
-    Move DbUnit to separate component.
+    move dbunit to separate component.
 
 
 -----------------
-    Bump copyright year.
+    bump copyright year.
 
 
 -----------------
-    Initial work on formatting code according to PSR-2
+    initial work on formatting code according to psr-2
 
 
 -----------------
-    Fix CS/WS issues
+    fix cs/ws issues
 
 
 -----------------
-    Whitespace fixes.
+    whitespace fixes.
 
 
 -----------------
-    Merge [3160].
+    merge [3160].
 
 
 -----------------
-    Drop superfluous annotations.
+    drop superfluous annotations.
 
 
 -----------------
-    Sebastian Bergmann => Sebastian Bergmann and contributors
+    sebastian bergmann => sebastian bergmann and contributors
 
 
 -----------------
-    phpcbf --standard=PSR2 src tests
+    phpcbf --standard=psr2 src tests
 
 
 -----------------
-    Update tests for 70f67b473e530bf595f62f20d7eccf7847c0b6fa
+    update tests for 70f67b473e530bf595f62f20d7eccf7847c0b6fa
 
 
 -----------------
-    Fix CS/WS issues
+    fix cs/ws issues
 
 
 -----------------
-    Merge [2850].
+    merge [2850].
 
 
 -----------------
-    Use autoloader to load fixture classes (where possible)
+    use autoloader to load fixture classes (where possible)
 
 
 -----------------
-    Fix whitespace issues reported by PHP_CodeSniffer.
+    fix whitespace issues reported by php_codesniffer.
 
 
 -----------------
-    Merge [1361].
+    merge [1361].
 
 
 -----------------
-    Merge [5161].
+    merge [5161].
 
 
 -----------------
-    Fix CS/WS issues.
+    fix cs/ws issues.
 
 
 -----------------
-    Merge dbunit branch, 2 of 3.
+    merge dbunit branch, 2 of 3.
 
 
 -----------------
-    Fix CS/WS issues
+    fix cs/ws issues
 
 
 -----------------
-    Clean up PHPT tests
+    clean up phpt tests
 
 
 -----------------
-    Use short array syntax
+    use short array syntax
 
 
 -----------------
-    Update tests.
+    update tests.
 
 
 -----------------
-    Move Mock Object library to separate component.
+    move mock object library to separate component.
 
 
 -----------------
-    Move MockObject to Framework.
+    move mockobject to framework.
 
 
 -----------------
-    toString -> __toString()
+    tostring -> __tostring()
 
 
 -----------------
-    Merge [5047].
+    merge [5047].
 
 
 -----------------
-    Make tests even more portable.
+    make tests even more portable.
 
 
 -----------------
-    Modified constraint subframework to use the new comparator classes
+    modified constraint subframework to use the new comparator classes
 
 
 -----------------
-    Sync b8c99c2.
+    sync b8c99c2.
 
 
 -----------------
-    Update tests for new update from PHP_Timer
+    update tests for new update from php_timer
 
 
 -----------------
-    I am not going to use the ConsoleTools component (for now).
+    i am not going to use the consoletools component (for now).
 
 
 -----------------

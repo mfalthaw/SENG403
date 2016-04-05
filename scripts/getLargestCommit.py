@@ -45,11 +45,10 @@ correctiveKeyWords = []
 adaptiveKeyWords = []
 implementationKeyWords = []
 nonfunctionalKeyWords = [] 
-perfectiveKeyWords = ['Merge'] 
+perfectiveKeyWords = ['merge']
 
 
-def categorizeComments(comments,numberofcommits):
-    print(len(comments))
+def categorizeComments(comments):
     correctiveCount = 0
     adaptiveCount = 0
     implementationCount = 0
@@ -57,31 +56,26 @@ def categorizeComments(comments,numberofcommits):
     perfectiveCount = 0 
     loopCount = 0
     for comment in comments:
-        if (loopCount <numberofcommits):
-            for correctivekw in correctiveKeyWords: 
-                if correctivekw in comment: 
-                    correctiveCount = correctiveCount + 1
-                    break
-            for adaptivekw in adaptiveKeyWords: 
-                if adaptivekw in comment: 
-                    adaptiveCount = adaptiveCount + 1
-                    break
-            for implementationkw in implementationKeyWords: 
-                if implementationkw in comment: 
-                    implementationCount = implementationCount + 1
-                    break
-            for nonfunctionalkw in nonfunctionalKeyWords: 
-                if nonfunctionalkw in comment: 
-                    nonfunctionalCount = nonfunctionalCount + 1
-                    break
-            for perfectivekw in perfectiveKeyWords: 
-                if perfectivekw in comment: 
-                    perfectiveCount = perfectiveCount + 1
-                    break
-        else:
-            break
-        print(loopCount)
-        loopCount = loopCount + 1
+       for correctivekw in correctiveKeyWords: 
+           if correctivekw in comment: 
+               correctiveCount = correctiveCount + 1
+               break
+       for adaptivekw in adaptiveKeyWords: 
+           if adaptivekw in comment: 
+               adaptiveCount = adaptiveCount + 1
+               break
+       for implementationkw in implementationKeyWords: 
+           if implementationkw in comment: 
+               implementationCount = implementationCount + 1
+               break
+       for nonfunctionalkw in nonfunctionalKeyWords: 
+           if nonfunctionalkw in comment: 
+               nonfunctionalCount = nonfunctionalCount + 1
+               break
+       for perfectivekw in perfectiveKeyWords: 
+           if perfectivekw in comment: 
+               perfectiveCount = perfectiveCount + 1
+               break
 
     print("corrective: " + str(correctiveCount))
     print("implementation: " + str(implementationCount))
@@ -120,7 +114,8 @@ for repoName in repoNames:
                 else:
                     commitidssecond.append(line[7:len(line)-1])
                 counter = counter + 1
-                
+            elif line.startswith('Merge:') or line.startswith('Merge branch'):
+                pass    
             elif line.startswith('File count'):
                 filecounts.append(int(line[12:len(line)-1]))
                 counter = counter + 1
@@ -132,10 +127,11 @@ for repoName in repoNames:
                 index = index + 1
                 commentStarted = 0  
             elif commentStarted: 
-                comments.insert(index, comments[index] + line)
+                lowercaseComment = comments[index] + line
+                comments.insert(index, lowercaseComment.lower())
 
         index = 0
-        print(comments[0])
+        
         for commitidstart in commitidsfirst:
             tup = (commitidstart, commitidssecond[index], filecounts[index], comments[index])
             ids_and_counts.append(tup)
@@ -152,7 +148,7 @@ for repoName in repoNames:
     numberofcommits = len(ids_and_counts)*0.01
     #fname.write('\n')
     commitcounter = 1
-    
+    largestcommits = []
     for line in ids_and_counts:
         if(commitcounter >= numberofcommits):
             break
@@ -170,10 +166,11 @@ for repoName in repoNames:
         fname.write('\n')
         '''
         fname.write(line[3]) 
+        largestcommits.append(line[3])
         fname.write("-----------------")
         commitcounter = commitcounter + 1
 
-    categorizeComments(comments,numberofcommits)
+    categorizeComments(largestcommits)
     
 
 
