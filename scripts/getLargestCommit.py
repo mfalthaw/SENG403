@@ -4,35 +4,34 @@ import subprocess
 
 urls = [ 
     #bea & moath
-    #"https://github.com/hsarvesthq/chosen",
-    
-    # "https://github.com/slimphp/Slim",
-    # "https://github.com/twitter/gizzard",
-    # "https://github.com/JakeWharton/ActionBarSherlock",
-    # "https://github.com/thoughtbot/paperclip",
-    # "https://github.com/mitsuhiko/flask",
-    # "https://github.com/ariya/phantomjs",
-    # "https://github.com/tornadoweb/tornado",
-    # "https://github.com/scalatra/scalatra",
-    # "https://github.com/sbt/sbt",
-    # "https://github.com/twitter/finagle",
-    # "https://github.com/antirez/redis",
-    # "https://github.com/hbons/SparkleShare",
-    # "https://github.com/ServiceStack/ServiceStack",
-    # "https://github.com/sebastianbergmann/phpunit",
-    # # brandon & tanner
-    # "https://github.com/facebook/facebook-android-sdk",
-    # "https://github.com/pockethub/PocketHub",
-    # "https://github.com/AutoMapper/AutoMapper",
-    # "https://github.com/bitcoin/bitcoin",
-    # "https://github.com/TTimo/doom3.gpl",
-    # "https://github.com/jquery/jquery",
-    # "https://github.com/xbmc/xbmc",
-    # "https://github.com/reddit/reddit",
-    # "https://github.com/rails/rails",
-    # "https://github.com/scala/scala",
-    # #jon & karson
-    # "https://github.com/ThinkUpLLC/ThinkUp",
+    "https://github.com/hsarvesthq/chosen",
+     "https://github.com/slimphp/Slim",
+     "https://github.com/twitter/gizzard",
+     "https://github.com/JakeWharton/ActionBarSherlock",
+     "https://github.com/thoughtbot/paperclip",
+     "https://github.com/mitsuhiko/flask",
+     "https://github.com/ariya/phantomjs",
+     "https://github.com/tornadoweb/tornado",
+     "https://github.com/scalatra/scalatra",
+     "https://github.com/sbt/sbt",
+     "https://github.com/twitter/finagle",
+     "https://github.com/antirez/redis",
+     "https://github.com/hbons/SparkleShare",
+     "https://github.com/ServiceStack/ServiceStack",
+     "https://github.com/sebastianbergmann/phpunit",
+     # brandon & tanner
+     "https://github.com/facebook/facebook-android-sdk",
+     "https://github.com/pockethub/PocketHub",
+     "https://github.com/AutoMapper/AutoMapper",
+     "https://github.com/bitcoin/bitcoin",
+     "https://github.com/TTimo/doom3.gpl",
+     "https://github.com/jquery/jquery",
+     "https://github.com/xbmc/xbmc",
+     "https://github.com/reddit/reddit",
+     "https://github.com/rails/rails",
+     "https://github.com/scala/scala",
+    #jon & karson
+     "https://github.com/ThinkUpLLC/ThinkUp",
     
     
     "https://github.com/bitcoin/bitcoin",
@@ -79,7 +78,6 @@ repoNames = [
     # "scala",
     # #jon & karson
     # "ThinkUp",
-
     "bitcoin",
     "scala",
     "mongo",
