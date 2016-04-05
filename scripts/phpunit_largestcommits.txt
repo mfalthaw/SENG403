@@ -1,0 +1,269 @@
+67.92
+    Cleanup
+
+
+-----------------
+    Make it easier to use a checkout of the trunk.
+
+
+-----------------
+    Reorganize.
+
+
+-----------------
+    Removing trailing whitespace from files. Refs #1063
+
+
+-----------------
+    Bump copyright year.
+
+
+-----------------
+    Remove Subversion keywords.
+
+
+-----------------
+    Remove closing PHP tags.
+
+
+-----------------
+    Merge [4402].
+
+
+-----------------
+    Bump copyright year.
+
+
+-----------------
+    Remove Subversion keywords.
+
+
+-----------------
+    Bump copyright year.
+
+
+-----------------
+    Remove Subversion keywords.
+
+
+-----------------
+    Initial work on PHP_CodeCoverage migration.
+
+
+-----------------
+    Bump copyright year.
+
+
+-----------------
+    Bump copyright year.
+
+
+-----------------
+    Merge [5389].
+
+
+-----------------
+    Bump copyright year.
+
+
+-----------------
+    Add @subpackage annotation.
+
+
+-----------------
+    Initial work on autoloading.
+
+
+-----------------
+    Fugbix typo.
+
+
+-----------------
+    Recreate trunk.
+
+
+-----------------
+    Fugbix typo.
+
+
+-----------------
+    Fix CS/WS issues
+
+
+-----------------
+    Bump year.
+
+
+-----------------
+    No longer needed.
+
+
+-----------------
+    Post-PEAR cleanup, phase one: PHPUnit2_* -> PHPUnit_*, pear.php.net -> phpunit.de, etc.
+
+
+-----------------
+    Leftover: PHPUnit2 -> PHPUnit.
+
+
+-----------------
+    Closes #1558
+
+
+-----------------
+    Cleanup
+
+
+-----------------
+    Bump copyright year
+
+
+-----------------
+    Change email address.
+
+
+-----------------
+    Bump copyright year.
+
+
+-----------------
+    List The BSD 3-Clause License correctly and consistently. Thanks to Christian Aistleitner <christian@quelltextlich.at> for bringing this issue to my attention.
+
+
+-----------------
+    Merge [1238], [1239], and [1240].
+
+
+-----------------
+    Bump copyright year
+
+
+-----------------
+    Do not perform string replacement for @package_version@ anymore.
+
+
+-----------------
+    Move DbUnit to separate component.
+
+
+-----------------
+    Bump copyright year.
+
+
+-----------------
+    Initial work on formatting code according to PSR-2
+
+
+-----------------
+    Fix CS/WS issues
+
+
+-----------------
+    Whitespace fixes.
+
+
+-----------------
+    Merge [3160].
+
+
+-----------------
+    Drop superfluous annotations.
+
+
+-----------------
+    Sebastian Bergmann => Sebastian Bergmann and contributors
+
+
+-----------------
+    phpcbf --standard=PSR2 src tests
+
+
+-----------------
+    Update tests for 70f67b473e530bf595f62f20d7eccf7847c0b6fa
+
+
+-----------------
+    Fix CS/WS issues
+
+
+-----------------
+    Merge [2850].
+
+
+-----------------
+    Use autoloader to load fixture classes (where possible)
+
+
+-----------------
+    Fix whitespace issues reported by PHP_CodeSniffer.
+
+
+-----------------
+    Merge [1361].
+
+
+-----------------
+    Merge [5161].
+
+
+-----------------
+    Fix CS/WS issues.
+
+
+-----------------
+    Merge dbunit branch, 2 of 3.
+
+
+-----------------
+    Fix CS/WS issues
+
+
+-----------------
+    Clean up PHPT tests
+
+
+-----------------
+    Use short array syntax
+
+
+-----------------
+    Update tests.
+
+
+-----------------
+    Move Mock Object library to separate component.
+
+
+-----------------
+    Move MockObject to Framework.
+
+
+-----------------
+    toString -> __toString()
+
+
+-----------------
+    Merge [5047].
+
+
+-----------------
+    Make tests even more portable.
+
+
+-----------------
+    Modified constraint subframework to use the new comparator classes
+
+
+-----------------
+    Sync b8c99c2.
+
+
+-----------------
+    Update tests for new update from PHP_Timer
+
+
+-----------------
+    I am not going to use the ConsoleTools component (for now).
+
+
+-----------------

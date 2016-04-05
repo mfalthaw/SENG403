@@ -61,17 +61,22 @@ for url in urls:
 
 	#fname.write(str(out.splitlines()))
 	count = 0
+	first = 1
+	fname.write("commentStart \n")
 	for line in out.splitlines():
 		if line.startswith('Author:') or line.startswith('Date:'):
 			pass
 		elif line.startswith('commit'):
-			fname.write("commentEnd" + '\n')
-			fname.write(str(line) + '\n')
-			fname.write("File count: " + str(count) + '\n')
-			fname.write("---------------------------------------------\n")
-			fname.write(str(line) + '\n')
-			fname.write("commentStart" + '\n')
-			count = 0
+			if first:
+				first = 0
+			else:
+				fname.write("commentEnd" + '\n')
+				fname.write(str(line) + '\n')
+				fname.write("File count: " + str(count) + '\n')
+				fname.write("---------------------------------------------\n")
+				fname.write(str(line) + '\n')
+				fname.write("commentStart" + '\n')
+				count = 0
 		else:
 			if line.startswith(('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '-')):
 				count = count + 1
@@ -79,4 +84,5 @@ for url in urls:
 				#fname.write(filename + '\n')
 			else:
 				fname.write(str(line) + '\n') #comments
+	fname.write('commentEnd')
 	fname.close()
