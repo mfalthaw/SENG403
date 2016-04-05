@@ -103,7 +103,6 @@ for repoName in repoNames:
     fname.write('\n1 percent of commits ')
     '''
     numberofcommits = len(ids_and_counts)*0.01
-    fname.write(str(numberofcommits))
     #fname.write('\n')
     commitcounter = 1
     
