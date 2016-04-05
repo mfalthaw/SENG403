@@ -41,6 +41,52 @@ repoNames = [
 #   "ServiceStack",
     "phpunit"
     ]
+correctiveKeyWords = []
+adaptiveKeyWords = []
+implementationKeyWords = []
+nonfunctionalKeyWords = [] 
+perfectiveKeyWords = ['merge'] 
+
+
+def categorizeComments(comments,numberofcommits):
+    print(len(comments))
+    correctiveCount = 0
+    adaptiveCount = 0
+    implementationCount = 0
+    nonfunctionalCount = 0
+    perfectiveCount = 0 
+    loopCount = 0
+    for comment in comments:
+        #if (loopCount >= numberofcommits):
+        #    break
+        for correctivekw in correctiveKeyWords: 
+            if correctivekw in comment: 
+                correctiveCount = correctiveCount + 1
+                break
+        for adaptivekw in adaptiveKeyWords: 
+            if adaptivekw in comment: 
+                adaptiveCount = adaptiveCount + 1
+                break
+        for implementationkw in implementationKeyWords: 
+            if implementationkw in comment: 
+                implementationCount = implementationCount + 1
+                break
+        for nonfunctionalkw in nonfunctionalKeyWords: 
+            if nonfunctionalkw in comment: 
+                nonfunctionalCount = nonfunctionalCount + 1
+                break
+        for perfectivekw in perfectiveKeyWords: 
+            if perfectivekw in comment: 
+                perfectiveCount = perfectiveCount + 1
+                print(comment)
+                break
+        loopCount = loopCount + 1
+
+    print("corrective: " + str(correctiveCount))
+    print("implementation: " + str(implementationCount))
+    print("adaptive: " + str(adaptiveCount))
+    print("nonfunctional: " + str(nonfunctionalCount))
+    print("perfective: " + str(perfectiveCount))
 
 for repoName in repoNames: 
     commitidsfirst = [] 
@@ -125,6 +171,9 @@ for repoName in repoNames:
         fname.write(line[3]) 
         fname.write("-----------------")
         commitcounter = commitcounter + 1
+
+    categorizeComments(comments,numberofcommits)
+    
 
 
 
