@@ -8,20 +8,20 @@ import subprocess
 
 
 urls = [ 
-#	"https://github.com/harvesthq/chosen",
-#	"https://github.com/slimphp/Slim",
-#	"https://github.com/twitter/gizzard",
-#	"https://github.com/JakeWharton/ActionBarSherlock",
-#	"https://github.com/thoughtbot/paperclip",
-#	"https://github.com/mitsuhiko/flask",
-#	"https://github.com/ariya/phantomjs",
-#	"https://github.com/tornadoweb/tornado",
-#	"https://github.com/scalatra/scalatra",
-#	"https://github.com/sbt/sbt",
-#	"https://github.com/twitter/finagle",
-#	"https://github.com/antirez/redis",
-#	"https://github.com/hbons/SparkleShare",
-#	"https://github.com/ServiceStack/ServiceStack",
+	"https://github.com/harvesthq/chosen",
+	"https://github.com/slimphp/Slim",
+	"https://github.com/twitter/gizzard",
+	"https://github.com/JakeWharton/ActionBarSherlock",
+	"https://github.com/thoughtbot/paperclip",
+	"https://github.com/mitsuhiko/flask",
+	"https://github.com/ariya/phantomjs",
+	"https://github.com/tornadoweb/tornado",
+	"https://github.com/scalatra/scalatra",
+	"https://github.com/sbt/sbt",
+	"https://github.com/twitter/finagle",
+	"https://github.com/antirez/redis",
+	"https://github.com/hbons/SparkleShare",
+	"https://github.com/ServiceStack/ServiceStack",
 	"https://github.com/sebastianbergmann/phpunit"
 	]
 
@@ -30,20 +30,20 @@ urls = [
 
 
 repoNames = [ 
-#	"chosen",
-#	"Slim",
-#	"gizzard",
-#	"ActionBarSherlock",
-#	"paperclip",
-#	"flask",
-#	"phantomjs",
-#	"tornado",
-#	"scalatra",
-#	"sbt",
-#	"finagle",
-#	"redis",
-#	"SparkleShare",
-#	"ServiceStack",
+	"chosen",
+	"Slim",
+	"gizzard",
+	"ActionBarSherlock",
+	"paperclip",
+	"flask",
+	"phantomjs",
+	"tornado",
+	"scalatra",
+	"sbt",
+	"finagle",
+	"redis",
+	"SparkleShare",
+	"ServiceStack",
 	"phpunit"
 	]
 

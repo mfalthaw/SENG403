@@ -1,9 +1,9 @@
 from operator import itemgetter
-
+import subprocess
 
 
 urls = [ 
-#   "https://github.com/hsarvesthq/chosen",
+   "https://github.com/hsarvesthq/chosen",
 #   "https://github.com/slimphp/Slim",
 #   "https://github.com/twitter/gizzard",
 #   "https://github.com/JakeWharton/ActionBarSherlock",
@@ -16,7 +16,7 @@ urls = [
 #   "https://github.com/twitter/finagle",
 #   "https://github.com/antirez/redis",
 #   "https://github.com/hbons/SparkleShare",
-#   "https://github.com/ServiceStack/ServiceStack",
+ #   "https://github.com/ServiceStack/ServiceStack",
     "https://github.com/sebastianbergmann/phpunit"
     ]
 
@@ -25,27 +25,39 @@ urls = [
 
 
 repoNames = [ 
-#   "chosen",
-#   "Slim",
-#   "gizzard",
-#   "ActionBarSherlock",
-#   "paperclip",
-#   "flask",
-#   "phantomjs",
-#   "tornado",
-#   "scalatra",
-#   "sbt",
-#   "finagle",
-#   "redis",
-#   "SparkleShare",
-#   "ServiceStack",
+    "chosen",
+    "Slim",
+    "gizzard",
+    "ActionBarSherlock",
+    "paperclip",
+    "flask",
+    "phantomjs",
+    "tornado",
+    "scalatra",
+    " sbt",
+    "finagle",
+    "redis",
+    "SparkleShare",
+    "ServiceStack",
     "phpunit"
     ]
-correctiveKeyWords = []
-adaptiveKeyWords = []
-implementationKeyWords = []
-nonfunctionalKeyWords = [] 
-perfectiveKeyWords = ['merge']
+correctiveKeyWords = ['bug', 'debug', 'fix', 
+    'broken', 'work', 'edit', 'problem', 
+    'error', 'typo', 'exception', 'try', 'catch']
+
+adaptiveKeyWords = ['platform', 'build', 'test', 
+    'doc', 'documentation', 'international', 'config', 
+    'data', 'readme', 'info', 'comment', 'description', 'src', 'note', ]
+
+implementationKeyWords = ['init', 'add', 'feature', 'implement']
+
+nonfunctionalKeyWords = [ 'merge', 'license', 'legal', 'copyright'] 
+
+perfectiveKeyWords = ['clean', 'whitespace', 'indent', 'spacing', 
+    'refactor', 'move', 'rename', 'replace', 'remove', 'order',
+    'redundant', 'tidy', 'rework', 'patch', 'move']
+
+fname = open("results.txt",'w')
 
 
 def categorizeComments(comments):
@@ -76,12 +88,13 @@ def categorizeComments(comments):
            if perfectivekw in comment: 
                perfectiveCount = perfectiveCount + 1
                break
-
-    print("corrective: " + str(correctiveCount))
-    print("implementation: " + str(implementationCount))
-    print("adaptive: " + str(adaptiveCount))
-    print("nonfunctional: " + str(nonfunctionalCount))
-    print("perfective: " + str(perfectiveCount))
+    total = correctiveCount + implementationCount + adaptiveCount + nonfunctionalCount + perfectiveCount
+    fname.write("\nCategorized " + str(total) + " out of " + str(len(comments)))
+    fname.write("\ncorrective: " + str(correctiveCount))
+    fname.write("\nimplementation: " + str(implementationCount))
+    fname.write("\nadaptive: " + str(adaptiveCount))
+    fname.write("\nnonfunctional: " + str(nonfunctionalCount))
+    fname.write("\nperfective: " + str(perfectiveCount))
 
 for repoName in repoNames: 
     commitidsfirst = [] 
@@ -107,8 +120,8 @@ for repoName in repoNames:
                     commitidsfirst.append(line[7:len(line)-1])
                     commitidssecond.append(line[7:len(line)-1])
 
-                    #print(commitidsfirst)
-                    #print(commitidssecond)
+                    #fname.write(commitidsfirst)
+                    #fname.write(commitidssecond)
                 elif(counter % 2 == 0):
                     commitidsfirst.append(line[7:len(line)-1])
                 else:
@@ -139,38 +152,23 @@ for repoName in repoNames:
 
         ids_and_counts = sorted(ids_and_counts,key=getKey, reverse=True)   
     
-    fname = open(repoName + "_largestcommits.txt",'w')
-    '''
-    fname.write('Number of commits ')
-    fname.write(str(len(ids_and_counts)))
-    fname.write('\n1 percent of commits ')
-    '''
+   
+    
     numberofcommits = len(ids_and_counts)*0.01
-    #fname.write('\n')
     commitcounter = 1
     largestcommits = []
     for line in ids_and_counts:
         if(commitcounter >= numberofcommits):
             break
-        '''
-        fname.write('\n')
-        fname.write("commit number: ")
-        fname.write(str(commitcounter))
-        fname.write('\ncommitid1: ')
-        fname.write(line[0])
-        fname.write('\ncommitid2: ')
-        fname.write(line[1])
-        fname.write('\nFiles Changed: ')
-        fname.write(str(line[2]))
-        fname.write(' ')
-        fname.write('\n')
-        '''
-        fname.write(line[3]) 
         largestcommits.append(line[3])
-        fname.write("-----------------")
         commitcounter = commitcounter + 1
 
+    fname.write("\n" + repoName)
+    fname.write("\n============")
     categorizeComments(largestcommits)
+    fname.write("\n")
+    
+    subprocess.call(["rm", repoName + "_commitlog.txt"])
     
 
 
