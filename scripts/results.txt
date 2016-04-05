@@ -1,0 +1,306 @@
+
+Slim
+============
+Categorized 14 out of 27
+corrective: 2
+implementation: 1
+adaptive: 5
+nonfunctional: 2
+perfective: 4
+
+gizzard
+============
+Categorized 11 out of 13
+corrective: 5
+implementation: 2
+adaptive: 1
+nonfunctional: 0
+perfective: 3
+
+ActionBarSherlock
+============
+Categorized 13 out of 14
+corrective: 2
+implementation: 4
+adaptive: 1
+nonfunctional: 1
+perfective: 5
+
+paperclip
+============
+Categorized 19 out of 17
+corrective: 5
+implementation: 4
+adaptive: 4
+nonfunctional: 0
+perfective: 6
+
+flask
+============
+Categorized 31 out of 24
+corrective: 8
+implementation: 4
+adaptive: 14
+nonfunctional: 0
+perfective: 5
+
+phantomjs
+============
+Categorized 19 out of 18
+corrective: 2
+implementation: 4
+adaptive: 7
+nonfunctional: 0
+perfective: 6
+
+tornado
+============
+Categorized 33 out of 30
+corrective: 6
+implementation: 4
+adaptive: 10
+nonfunctional: 1
+perfective: 12
+
+scalatra
+============
+Categorized 25 out of 27
+corrective: 3
+implementation: 5
+adaptive: 4
+nonfunctional: 0
+perfective: 13
+
+ sbt
+============
+Categorized 0 out of 0
+corrective: 0
+implementation: 0
+adaptive: 0
+nonfunctional: 0
+perfective: 0
+
+finagle
+============
+Categorized 85 out of 43
+corrective: 22
+implementation: 18
+adaptive: 22
+nonfunctional: 0
+perfective: 23
+
+redis
+============
+Categorized 59 out of 55
+corrective: 12
+implementation: 15
+adaptive: 17
+nonfunctional: 4
+perfective: 11
+
+SparkleShare
+============
+Categorized 32 out of 41
+corrective: 4
+implementation: 9
+adaptive: 4
+nonfunctional: 3
+perfective: 12
+
+ServiceStack
+============
+Categorized 66 out of 68
+corrective: 16
+implementation: 14
+adaptive: 11
+nonfunctional: 5
+perfective: 20
+
+phpunit
+============
+Categorized 61 out of 67
+corrective: 15
+implementation: 5
+adaptive: 6
+nonfunctional: 20
+perfective: 15
+
+facebook-android-sdk
+============
+Categorized 4 out of 5
+corrective: 1
+implementation: 1
+adaptive: 2
+nonfunctional: 0
+perfective: 0
+
+PocketHub
+============
+Categorized 28 out of 30
+corrective: 4
+implementation: 4
+adaptive: 4
+nonfunctional: 2
+perfective: 14
+
+AutoMapper
+============
+Categorized 10 out of 13
+corrective: 0
+implementation: 1
+adaptive: 8
+nonfunctional: 1
+perfective: 0
+
+bitcoin
+============
+Categorized 123 out of 103
+corrective: 22
+implementation: 24
+adaptive: 28
+nonfunctional: 17
+perfective: 32
+
+doom3.gpl
+============
+Categorized 0 out of 0
+corrective: 0
+implementation: 0
+adaptive: 0
+nonfunctional: 0
+perfective: 0
+
+jquery
+============
+Categorized 93 out of 60
+corrective: 24
+implementation: 4
+adaptive: 42
+nonfunctional: 0
+perfective: 23
+
+xbmc
+============
+Categorized 377 out of 387
+corrective: 45
+implementation: 112
+adaptive: 52
+nonfunctional: 13
+perfective: 155
+
+reddit
+============
+Categorized 116 out of 73
+corrective: 23
+implementation: 27
+adaptive: 26
+nonfunctional: 12
+perfective: 28
+
+rails
+============
+Categorized 669 out of 574
+corrective: 106
+implementation: 96
+adaptive: 209
+nonfunctional: 38
+perfective: 220
+
+scala
+============
+Categorized 354 out of 257
+corrective: 69
+implementation: 63
+adaptive: 106
+nonfunctional: 18
+perfective: 98
+
+ThinkUp
+============
+Categorized 53 out of 28
+corrective: 8
+implementation: 11
+adaptive: 12
+nonfunctional: 8
+perfective: 14
+
+bitcoin
+============
+Categorized 123 out of 103
+corrective: 22
+implementation: 24
+adaptive: 28
+nonfunctional: 17
+perfective: 32
+
+scala
+============
+Categorized 354 out of 257
+corrective: 69
+implementation: 63
+adaptive: 106
+nonfunctional: 18
+perfective: 98
+
+mongo
+============
+Categorized 338 out of 334
+corrective: 49
+implementation: 66
+adaptive: 88
+nonfunctional: 10
+perfective: 125
+
+akka
+============
+Categorized 269 out of 189
+corrective: 40
+implementation: 52
+adaptive: 74
+nonfunctional: 17
+perfective: 86
+
+shiny
+============
+Categorized 24 out of 28
+corrective: 2
+implementation: 6
+adaptive: 10
+nonfunctional: 0
+perfective: 6
+
+xbmc
+============
+Categorized 379 out of 388
+corrective: 45
+implementation: 112
+adaptive: 52
+nonfunctional: 14
+perfective: 156
+
+reddit
+============
+Categorized 116 out of 73
+corrective: 23
+implementation: 27
+adaptive: 26
+nonfunctional: 12
+perfective: 28
+
+legacy-homebrew
+============
+Categorized 642 out of 638
+corrective: 135
+implementation: 115
+adaptive: 178
+nonfunctional: 9
+perfective: 205
+
+node
+============
+Categorized 84 out of 135
+corrective: 24
+implementation: 7
+adaptive: 31
+nonfunctional: 5
+perfective: 17
