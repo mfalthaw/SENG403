@@ -45,7 +45,7 @@ correctiveKeyWords = []
 adaptiveKeyWords = []
 implementationKeyWords = []
 nonfunctionalKeyWords = [] 
-perfectiveKeyWords = ['merge'] 
+perfectiveKeyWords = ['Merge'] 
 
 
 def categorizeComments(comments,numberofcommits):
@@ -57,29 +57,30 @@ def categorizeComments(comments,numberofcommits):
     perfectiveCount = 0 
     loopCount = 0
     for comment in comments:
-        #if (loopCount >= numberofcommits):
-        #    break
-        for correctivekw in correctiveKeyWords: 
-            if correctivekw in comment: 
-                correctiveCount = correctiveCount + 1
-                break
-        for adaptivekw in adaptiveKeyWords: 
-            if adaptivekw in comment: 
-                adaptiveCount = adaptiveCount + 1
-                break
-        for implementationkw in implementationKeyWords: 
-            if implementationkw in comment: 
-                implementationCount = implementationCount + 1
-                break
-        for nonfunctionalkw in nonfunctionalKeyWords: 
-            if nonfunctionalkw in comment: 
-                nonfunctionalCount = nonfunctionalCount + 1
-                break
-        for perfectivekw in perfectiveKeyWords: 
-            if perfectivekw in comment: 
-                perfectiveCount = perfectiveCount + 1
-                print(comment)
-                break
+        if (loopCount <numberofcommits):
+            for correctivekw in correctiveKeyWords: 
+                if correctivekw in comment: 
+                    correctiveCount = correctiveCount + 1
+                    break
+            for adaptivekw in adaptiveKeyWords: 
+                if adaptivekw in comment: 
+                    adaptiveCount = adaptiveCount + 1
+                    break
+            for implementationkw in implementationKeyWords: 
+                if implementationkw in comment: 
+                    implementationCount = implementationCount + 1
+                    break
+            for nonfunctionalkw in nonfunctionalKeyWords: 
+                if nonfunctionalkw in comment: 
+                    nonfunctionalCount = nonfunctionalCount + 1
+                    break
+            for perfectivekw in perfectiveKeyWords: 
+                if perfectivekw in comment: 
+                    perfectiveCount = perfectiveCount + 1
+                    break
+        else:
+            break
+        print(loopCount)
         loopCount = loopCount + 1
 
     print("corrective: " + str(correctiveCount))
