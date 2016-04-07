@@ -1,4 +1,13 @@
 
+Chosen
+============
+Categorized 8 out of 11
+corrective: 0
+implementation: 2
+adaptive: 2
+nonfunctional: 0
+perfective: 4
+ 
 Slim
 ============
 Categorized 14 out of 27
