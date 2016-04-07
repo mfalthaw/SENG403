@@ -163,8 +163,8 @@ perfective: 32
 
 doom3.gpl
 ============
-Categorized 0 out of 0
-corrective: 0
+Categorized 1 out of 1
+corrective: 1
 implementation: 0
 adaptive: 0
 nonfunctional: 0
