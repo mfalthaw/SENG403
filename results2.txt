@@ -1,9 +1,9 @@
 
-Kodi
+kodi
 ============
-Categorized 0 out of 0
-corrective: 0
-implementation: 0
+Categorized 2 out of 1
+corrective: 1
+implementation: 1
 adaptive: 0
 nonfunctional: 0
 perfective: 0
