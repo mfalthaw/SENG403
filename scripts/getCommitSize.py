@@ -7,91 +7,93 @@ import subprocess
 #urls = [ "https://github.com/twitter-archive/kestrel" , " ", " ", ]
 
 urls = [ 
-    #bea & moath
-    "https://github.com/hsarvesthq/chosen",
-     "https://github.com/slimphp/Slim",
-     "https://github.com/twitter/gizzard",
-     "https://github.com/JakeWharton/ActionBarSherlock",
-     "https://github.com/thoughtbot/paperclip",
-     "https://github.com/mitsuhiko/flask",
-     "https://github.com/ariya/phantomjs",
-     "https://github.com/tornadoweb/tornado",
-     "https://github.com/scalatra/scalatra",
-     "https://github.com/sbt/sbt",
-     "https://github.com/twitter/finagle",
-     "https://github.com/antirez/redis",
-     "https://github.com/hbons/SparkleShare",
-     "https://github.com/ServiceStack/ServiceStack",
-     "https://github.com/sebastianbergmann/phpunit",
-     # brandon & tanner
-     "https://github.com/facebook/facebook-android-sdk",
-     "https://github.com/pockethub/PocketHub",
-     "https://github.com/AutoMapper/AutoMapper",
-     "https://github.com/bitcoin/bitcoin",
-     "https://github.com/TTimo/doom3.gpl",
-     "https://github.com/jquery/jquery",
-     "https://github.com/xbmc/xbmc",
-     "https://github.com/reddit/reddit",
-     "https://github.com/rails/rails",
-     "https://github.com/scala/scala",
-     #jon & karson
-     "https://github.com/ThinkUpLLC/ThinkUp",
-    
-    
-    "https://github.com/bitcoin/bitcoin",
-    "https://github.com/scala/scala",
-    "https://github.com/mongodb/mongo",
-    "https://github.com/akka/akka",
-    "https://github.com/rstudio/shiny",
-    "https://github.com/xbmc/xbmc",
-    "https://github.com/reddit/reddit",
-    "https://github.com/Homebrew/legacy-homebrew",
-    "https://github.com/nodejs/node"
+    # #bea & moath
+    # "https://github.com/hsarvesthq/chosen",
+    #  "https://github.com/slimphp/Slim",
+    #  "https://github.com/twitter/gizzard",
+    #  "https://github.com/JakeWharton/ActionBarSherlock",
+    #  "https://github.com/thoughtbot/paperclip",
+    #  "https://github.com/mitsuhiko/flask",
+    #  "https://github.com/ariya/phantomjs",
+    #  "https://github.com/tornadoweb/tornado",
+    #  "https://github.com/scalatra/scalatra",
+    #  "https://github.com/sbt/sbt",
+    #  "https://github.com/twitter/finagle",
+    #  "https://github.com/antirez/redis",
+    #  "https://github.com/hbons/SparkleShare",
+    #  "https://github.com/ServiceStack/ServiceStack",
+    #  "https://github.com/sebastianbergmann/phpunit",
+    #  # brandon & tanner
+        "https://github.com/XLordKX/kodi",
+        "https://github.com/owncloud/android"
+    #  "https://github.com/facebook/facebook-android-sdk",
+    #  "https://github.com/pockethub/PocketHub",
+    #  "https://github.com/AutoMapper/AutoMapper",
+    #  "https://github.com/bitcoin/bitcoin",
+    #  "https://github.com/TTimo/doom3.gpl",
+    #  "https://github.com/jquery/jquery",
+    #  "https://github.com/xbmc/xbmc",
+    #  "https://github.com/reddit/reddit",
+    #  "https://github.com/rails/rails",
+    #  "https://github.com/scala/scala",
+    #  #jon & karson
+    # "https://github.com/ThinkUpLLC/ThinkUp",
+    # "https://github.com/bitcoin/bitcoin",
+    # "https://github.com/scala/scala",
+    # "https://github.com/mongodb/mongo",
+    # "https://github.com/akka/akka",
+    # "https://github.com/rstudio/shiny",
+    # "https://github.com/xbmc/xbmc",
+    # "https://github.com/reddit/reddit",
+    # "https://github.com/Homebrew/legacy-homebrew",
+    # "https://github.com/nodejs/node"
 
     ]
 
 
 repoNames = [ 
-    #bea & moath
-    #"chosen",
+#     #bea & moath
+#     #"chosen",
  
-     "Slim",
-     "gizzard",
-     "ActionBarSherlock",
-     "paperclip",
-     "flask",
-     "phantomjs",
-     "tornado",
-     "scalatra",
-     " sbt",
-     "finagle",
-     "redis",
-     "SparkleShare",
-     "ServiceStack",
-     "phpunit",
-     #brandon & tanner's group 
-     "facebook-android-sdk", 
-     "PocketHub",
-     "AutoMapper",
-     "bitcoin",
-     "doom3.gpl",
-     "jquery",
-     "xbmc",
-     "reddit",
-     "rails",
-     "scala",
-#jon & karson
-    # "ThinkUp",
+#      "Slim",
+#      "gizzard",
+#      "ActionBarSherlock",
+#      "paperclip",
+#      "flask",
+#      "phantomjs",
+#      "tornado",
+#      "scalatra",
+#      " sbt",
+#      "finagle",
+#      "redis",
+#      "SparkleShare",
+#      "ServiceStack",
+#      "phpunit",
+#      #brandon & tanner's group 
+    "Kodi",
+    "Android"
+#      "facebook-android-sdk", 
+#      "PocketHub",
+#      "AutoMapper",
+#      "bitcoin",
+#      "doom3.gpl",
+#      "jquery",
+#      "xbmc",
+#      "reddit",
+#      "rails",
+#      "scala",
+# #jon & karson
+#     # "ThinkUp",
 
-    "bitcoin",
-    "scala",
-    "mongo",
-    "akka",
-    "shiny",
-    "xbmc",
-    "reddit",
-    "legacy-homebrew",
-    "node"
+#     "bitcoin",
+#     "scala",
+#     "mongo",
+#     "akka",
+#     "shiny",
+#     "xbmc",
+#     "reddit",
+#     "legacy-homebrew",
+#     "node"
     ]
 
 
